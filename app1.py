@@ -61,7 +61,7 @@ st.markdown("""
 # -----------------------------
 # Load Models
 # -----------------------------
-MODEL_DIR = r"C:\Users\Admin\Desktop\models"
+MODEL_DIR = 'models'
 
 with open(os.path.join(MODEL_DIR, "tfidf_vectorizer.pkl"), "rb") as f:
     tfidf = pickle.load(f)
@@ -160,4 +160,5 @@ if analyze:
 
 st.write("")
 st.caption("⚡ TF-IDF + Random Forest | NLP Food Review System")
+
 
