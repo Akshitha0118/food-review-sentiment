@@ -4,17 +4,19 @@ import re
 import os
 from nltk.stem.porter import PorterStemmer
 
-# -----------------------------
-# Page Config
-# -----------------------------
+nltk.download('punkt')
+
+from nltk.stem.porter import PorterStemmer
+
+
 st.set_page_config(
     page_title="Food Review Sentiment Analyzer",
     layout="wide"
 )
 
-# -----------------------------
+
 # Custom CSS
-# -----------------------------
+
 st.markdown("""
 <style>
 .main {
@@ -158,3 +160,4 @@ if analyze:
 
 st.write("")
 st.caption("⚡ TF-IDF + Random Forest | NLP Food Review System")
+
